@@ -40,7 +40,7 @@ router
     .put((req, res) => {
         res.send(`put user with id ${req.params.id}`)
     })
-    .delete((req, res) => {
+    .delete((req, res) => {``
         res.send(`delete user with id ${req.params.id}`)
     })
 
