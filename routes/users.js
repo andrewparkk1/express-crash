@@ -5,15 +5,17 @@ router.use(logger)
 const users = [{ name: "Kyle" }, { name: "Sally" }]
 
 
+/* A route handler that is listening for a get request on the root route. It is logging the query
+parameter name and then sending the string "User list" to the client. */
 router.get("/", (req, res) => {
     console.log(req.query.name)
     res.send("User list")
 })
 
+/* Rendering the users/new.ejs file and passing in the firstName variable. */
 router.get("/new", (req, res) => {
     res.render("users/new", {firstName: "Test"})
 })
-
 
 /* A post request that is adding a new user to the users array. */
 router.post("/", (req, res) => {
