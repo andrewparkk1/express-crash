@@ -1,5 +1,7 @@
 # express-crash
 
+Setup: nodemon setup.js
+
 ### static pages (public folder) ###
 
 
